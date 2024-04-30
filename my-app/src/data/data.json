@@ -1,0 +1,65 @@
+[
+    {
+        "id":1,
+        "department":"Gynocology",
+        "docters":[
+            {
+                "name":"Jhone"
+            },
+            {
+                "name":"Nadheera"
+            },
+            {
+                "name":"Sinu"
+            }
+
+        ]
+    },
+    {   
+        "id":2,
+        "department":"Microbiology",
+        "docters":[
+            {
+                "name":"jafer"
+            },
+            {
+                "name":"Samad"
+            },
+            {
+                "name":"Jamsheed"
+            }
+
+        ]
+        
+    },
+    {   
+        "id":3,
+        "department":"Neurology",
+        "docters":[
+            {
+                "name":"Muhammed"
+            },
+            {
+                "name":"Anil"
+            }
+            
+
+        ]
+        
+    },
+    {   
+        "id":4,
+        "department":"Pharmacology",
+        "docters":[
+            {
+                "name":"Hameed"
+            },
+            {
+                "name":"Sunil"
+            }
+            
+
+        ]
+        
+    }
+]

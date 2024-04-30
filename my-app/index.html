@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="a">
+      <label for="">Name</label>
+      <input type="text" pattern="[a-zA-Z][a-zA-Z_\-\. ]{2,20}" required />
+      <div>error masage</div>
+    </div>
+
+    <div class="a">
+      <label for="">Email</label>
+      <input
+        type="email"
+        pattern="[a-zA-Z][a-zA-Z0-9_\-\.]+[@][a-z]+[\.][a-z]{2,3}"
+        required
+        onblur='Hello'
+      />
+      <div>error masage</div>
+    </div>
+    <div class="a">
+      <label for="">Address</label>
+      <input type="text" pattern="[a-zA-Z][a-zA-Z0-9_\-\. ]*$" required />
+      <div>error masage</div>
+    </div>
+    <div class="a">
+      <label for="">Number</label>
+      <input type="tel" pattern="^[0-9]\d{9}$" required />
+      <div>error masage</div>
+    </div>
+
+    <style>
+      .a div {
+        color: red;
+        display: none;
+        font-size: 15px;
+      }
+      input:invalid ~ div {
+        display: block;
+      }
+    </style>
+  </body>
+</html>
+<!-- 
+
+
+<Form.Control
+            type="date"
+            name="date"
+            
+            value={inpput.date}
+            className="text-center"
+            required
+            onBlur={(e)=>handleDate(e)}
+            focus={focus.dateerr.toString()}
+            placeholder="Enter Your Address"
+            onChange={handleChange}
+          /> -->
+<!-- 
+          <Form.Control
+              type="text"
+              name='phone'
+              value={values.phone}
+              required
+              className="text-center"
+              onChange={handleChange}
+              placeholder="Enter Mobile number with Country code"
+              onBlur={handleBlur}
+            /> -->
+
+<!-- <Form.Check
+            onChange={handleCheckboxChange}
+            onBlur={handleBlur}
+            name="reading"
+            type="checkbox"
+            label="Reading"
+            checked={values.intrest.includes("reading")}
+          />
+          <Form.Check
+            onChange={handleCheckboxChange}
+            onBlur={handleBlur}
+            name="travel"
+            type="checkbox"
+            label="Travel"
+            checked={values.intrest.includes("travel")}
+          />
+          <Form.Check
+            onChange={handleCheckboxChange}
+            onBlur={handleBlur}
+            name="coading"
+            type="checkbox"
+            label="Coading"
+            checked={values.intrest.includes("coading")}
+          /> -->
+
+<!-- <Form.Control
+          type="file"
+          className="text-center"
+          name="image"
+          value={""}
+          placeholder="Upload your Image"
+          onChange={handleChange}
+          required
+          onBlur={()=>setfocus({...focus , imageerr:true})}
+          focus={focus.imageerr.toString()}
+        /> -->
+<!-- 
+
+        <PhoneInput
+        country={"in"}
+        onBlur={(value)=>handleBlur(value)}
+        onChange={}
+        value={values.phone}
+        inputProps={{
+          name:"phone"
+        }}     -->
